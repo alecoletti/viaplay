@@ -1,0 +1,28 @@
+{
+  "name": "viaplay",
+  "version": "1.0.0",
+  "description": "viaPlay test",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "verbose": true
+  },
+  "dependencies": {
+    "lambda-api": "^0.10.5"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.662.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^25.4.0",
+    "prettier": "^2.0.5"
+  }
+}
