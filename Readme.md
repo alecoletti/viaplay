@@ -1,4 +1,4 @@
-#ViaPlayTrailerFetcher
+# ViaPlayTrailerFetcher
 
 The trialer fetcher takes a movie URL as an argument and will try to fetch information about the available trailers for it. In case success it will answer with an array of trailers, otherwise it will just return an 404 
 status code with an error message.
@@ -32,3 +32,10 @@ GET `https://mocbw8de27.execute-api.eu-west-1.amazonaws.com/dev/get-trailer?movi
 	      }
 	   ]
 	}
+
+
+## TODO: 
+ * Fix Coverage
+ * Validate requests
+ * Add more robust error handling
+ * Add better logging

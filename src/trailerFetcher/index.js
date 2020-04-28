@@ -29,10 +29,8 @@ api.get('/get-trailer', async (req, res) => {
   } catch (e) {
     // TODO: fix better error handling and status codes
     // Return always 404
-    res.send({ message: 'We could not find the movie your are looking for' }).status(404)
+    res.status(404).send({ message: 'We could not find the movie your are looking for' })
   }
-
-  return as
 })
 
 exports.handler = async (event) => api.run(event)

@@ -5,7 +5,7 @@ module.exports.getMovie = async (url) => axios.get(url)
 
 module.exports.findByImdbID = async (id) => {
   const basePath = 'https://api.themoviedb.org/3'
-  const token = await ssm.getSecret(process.env.THEMOVIEDB_TOKEN)
+  const token = '6afbe356413272490d0cc0d3cc9f8dc7'//await ssm.getSecret(process.env.THEMOVIEDB_TOKEN)
 
   // Find the movie by its Imdb Id in order to fetch its The Movie DB Id
   const metaData = await axios.get(`${basePath}/find/${id}?api_key=${token}&external_source=imdb_id`)
