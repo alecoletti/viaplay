@@ -6,3 +6,5 @@ jspm_packages
 .serverless
 
 .idea
+
+src/trailerFetcher/node_modules

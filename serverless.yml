@@ -1,0 +1,23 @@
+service: TheTrailerFetcher
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - ssm:GetParameter
+      Resource:
+        - 'arn:aws:ssm:eu-west-1:*:*'
+  environment:
+    THEMOVIEDB_TOKEN: '/dev/viaplay/themoviedb-token'
+
+
+functions:
+  request:
+    handler: src/trailerFetcher/index.handler
+    events:
+      - http:
+          path: get-trailer
+          method: get
+          cors: true
